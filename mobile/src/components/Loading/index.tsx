@@ -1,12 +1,13 @@
-import { View, ActivityIndicator } from 'react-native'
+import { SafeAreaView } from 'react-native-safe-area-context'
+import { ActivityIndicator } from 'react-native'
 
-import { styles } from './styles'
 import { THEME } from '../../theme/index'
+import { styles } from './styles'
 
 export function Loading() {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <ActivityIndicator color={THEME.COLORS.PRIMARY} />
-    </View>
+    </SafeAreaView>
   )
 }

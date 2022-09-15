@@ -4,6 +4,8 @@ import backgroundImg from '../../assets/background-galaxy.png'
 
 import { styles } from './styles'
 
+import React from "react"
+
 interface Props {
   children: React.ReactNode
 }
